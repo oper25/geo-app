@@ -1,4 +1,4 @@
-# Service-Py REST API
+# App Service-Py REST API
 
 Минимальный FastAPI сервис с PostgreSQL, Redis и Prometheus метриками.
 
@@ -50,3 +50,20 @@ Apache Bench (1000 запросов, 10 параллельных):
 - Приложение: 8001
 - PostgreSQL: 5433
 - Redis: 6380
+
+
+## Проверка работоспособности:
+```bash
+curl http://localhost:8001/ping
+```
+
+
+Metrics endpoint:
+```bash
+curl http://localhost:8001/metrics
+```
+
+Или через браузер:
+• http://localhost:8001/ping
+• http://localhost:8001/metrics
+
